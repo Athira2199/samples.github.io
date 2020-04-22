@@ -1,2 +1,2 @@
 # tributepage
-https://github.com/Athira2199/tributepage.github.io/index.html
+https://athira2199.github.io/tributepage.github.io/index.html
