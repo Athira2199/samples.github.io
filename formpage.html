@@ -1,0 +1,131 @@
+<html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+*{
+  padding:0px;
+  margin:0px;
+}
+main{
+  background-image:url("https://cdn.britannica.com/53/166053-050-88676FD4/Interior-view-commercial-horticulture-greenhouse.jpg");
+  height:100%;
+  width:100%;
+}
+th{
+  text-align:left;
+  width:90%;
+}
+input,select,textarea{
+  margin-top:4%;
+  margin-bottom:5%;
+}
+.formclass{
+  background-color:rgba(0,0,0,0.7);
+  padding-left:15%;
+  padding-right:15%;
+  padding-top:2%;
+  margin-left:25%;
+  margin-top:2%;
+  margin-right:25%;
+  color:white;
+}
+.userinputs,.comments{
+   min-width: 100% ;
+    max-width: 100% ;
+}
+span{
+  padding-left:2%;
+}
+/*  input,select{
+    min-width: 100% ;
+    max-width: 100% ;
+/*   padding-right:7%;
+  padding-top:4%;
+  border-radius:4%;
+  border:none; 
+}  */
+.labels{
+  text-transform:uppercase;
+}
+
+#title,#description{
+  text-align:center;
+  padding-top:1%;
+}
+#description{
+    margin-top:1%;
+}
+input{
+  text-align:center;
+  font-style:italic;
+}
+.comments{
+  padding-bottom:40%;
+  padding-top:4%;
+}
+button{
+  width:100%;
+  height:100%;
+  margin-left:5%;
+  border-radius:50%;
+}
+</style>
+<body>
+<main>
+  <div>
+    <h1 id="title"> UNIVERSITY HORTICULTURE SOCIETY </h1>
+  </div>
+  <div>
+  <p id="description"> Membership Enrollment Form </p>
+  </div>
+  <div class="formclass">
+    <form id="survey-form">
+      <table>
+        <tr>
+          <th class="labels">
+            <label for="name" id="name-label">NAME</th>
+        </tr>
+         <tr>
+           <th><input id="name" type="text" placeholder="people call me...." class="userinputs" required></input></th>
+        </tr>
+        <tr>
+          <th class="labels"><label for="email" id="email-label">EMAIL</th>
+        </tr>
+        <tr>
+          <th><input id="email" type="email" placeholder="mail me at..." class="userinputs" required></input></th>
+        </tr>
+       <tr>
+         <th class="labels"><label for="number" id="number-label">MOBILE NUMBER</th>
+       </tr>
+       <tr>
+        <th><input id="number" type="number" placeholder="i answer for.."  class="userinputs" min="1000000000" max="9999999999"></input></th>
+       </tr>
+       <tr>
+         <th class="labels"><label for="dropdown">What will you deliver?</th>
+       </tr>
+       <tr>
+         <th>
+           <select id="dropdown" class="userinputs">
+             <option>----Product-----</option>
+             <option>Dairy</option>
+          <option>Vegetables/Fruits</option>
+           </select>
+         </th>
+       </tr>
+       <tr><th>GENDER</th></tr>
+       <tr>
+         <th class="gender labels" ><input type="radio" name="gender" value="female" ></input><span>FEMALE<span></th></tr>
+         <tr><th class="gender labels"><input type="radio" name="gender" value="male" ></input><span>MALE</span></th></tr>
+<tr><th class="labels">preferred timings ?</tr>
+       <tr>
+         <th class="labels"><input type="checkbox" value="morning"><span>morning</input></th><tr>
+<tr><th class="labels" ><input type="checkbox" value="afternoon"><span>afternoon</span></input></th></tr><tr>
+  <th class="labels"><input type="checkbox" value="afternoon"><span>evening</span></input></th>
+       </tr>
+<tr><th class="labels">Comments (<i>if any</i>)</th></tr>
+<tr><th><textarea placeholder="happy to hear from you" class="comments"></textarea></tr></th>
+<tr><th><button id="submit" type="submit">SUBMIT</th></tr></button>
+    </form>
+  </div>
+</main>
+</body>
+</html>
