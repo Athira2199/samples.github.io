@@ -1,0 +1,309 @@
+<html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+*{
+  margin:0;
+  padding:0;
+}
+nav ul{
+  float:right;
+  margin-right: 2em;
+  list-style-type:none;
+}
+li{
+display: inline;
+  padding: 1em;
+  display: inline-block; 
+}
+#header{
+  position:fixed;
+  display:flex;
+  width:100%;
+}
+#header-img{
+  float:left;
+  width:100px;
+  height:100px;
+}
+.companyname{
+  color:#55dd06;
+  font-size:30px;
+   margin-left:4%;
+  padding-left:7%; 
+}
+p{
+   padding-left:4%; 
+}
+u{
+  color:#8B0000;
+/*   padding-left:7%; */
+}
+.nav-link{
+   margin-left:30px;
+  padding-left:30px; 
+  color:#55dd06;
+}
+.nav-link:hover{
+   font-style:italic;
+   font-size:20px;
+   border-bottom:3px solid #8B0000;
+   cursor:pointer;
+   font-weight:bold;
+}
+a{
+  text-decoration:none;
+}
+main{
+  padding-top:7%;
+}
+.grid{
+  dispaly:flex;
+  margin-top:2%;
+/*   margin-top:110%; */
+}
+.description{
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 50vw;
+  padding-right:50%;
+  background-color:rgb(139,0,0,0.7);
+  padding-top:1%;
+  padding-left:4%;
+  float:left;
+  display:block;
+  color:white;
+}
+.odd{
+  padding-right:100%;
+}
+.odd:hover{
+  margin-left:50%;
+  max-width:30%;
+}
+.even:hover{
+  text-align:left !important;
+  padding-left:4%;
+}
+.even{
+  padding-left:50%;
+  background-color:rgb(85,221,6,0.7);
+  padding-right:4%;
+}
+#howitworks{
+  margin-top:50%;
+  margin-left:30%;
+  margin-bottom:4%;
+}
+#pricing{
+  display:flex;
+  color:white;
+}
+.product1{
+  flex-direction: row;
+  justify-content: center;
+  height: 125px;
+  width: 50vw;
+  margin-left:2%;
+  margin-right:2%;
+  background-color:rgb(139,0,0,0.7);
+  text-align:center;
+  padding-top:4%;
+  border:4px dotted rgb(139,0,0,0.7);
+}
+.ev
+{
+background-color:rgb(85,221,6,0.7);
+ border:4px dotted rgb(139,0,0,0.7);
+}
+.content > h1{
+  margin-top:13%;
+}
+p{
+  padding-top:1%;
+  padding-bottom:1%;
+}
+#contactus{
+  color:white;
+  display:flex;
+  justiy-content:space-between;
+  margin-top:4%;
+  background-image:linear-gradient(rgb(85,221,6,0.7),rgb(139,0,0,0.7));
+}
+.contact{
+  padding:5% 25% 5% 70%;
+  text-align:center;
+  display:flex;
+  justiy-content:space-between;
+  max-height:100px;
+}
+.contact >input{
+  text-align:center;
+}
+@media only screen and (max-height: 500px){
+  .description{
+   height:75vh;
+  }
+  .product1{
+  flex-direction: column;
+  justify-content: center;
+  height: 25vh;
+  width: 25vw;
+  padding-top:0%;
+  }
+}
+@media only screen and (max-width:500px){
+ #nav-bar{
+   margin-left:11%;
+  }
+  .nav-link{
+  margin-left:3px;
+  padding-left:14px;
+}
+  .nav-link:hover{
+   border-bottom:1px solid #8B0000;
+}
+  #howitworks{
+  margin-top:100%;
+  margin:0%;
+}
+  #header{
+    display:flex;
+  }
+  .contents{
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 50vw;
+  }
+  .product1{
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 50vw;
+  }
+}
+.sticky {
+  background-color:rgba(0,0,0,0.7);
+}
+#submit{
+  border-style:none;
+  background-color:rgb(85,221,6,0.7);
+  color:white;
+  box-shadow:none;
+  padding:16px;
+}
+</style>
+<body>
+  <script src="https://kit.fontawesome.com/da44b533aa.js" crossorigin="anonymous"></script>
+<div id="header">
+  <div class="contents">
+  <img id="header-img" src="Capture.JPG">
+  </div>
+  <div class="contents">
+    <p> <span class="companyname">AVACODES </span></p>
+  </div>
+  <div class="contents">
+  <nav id="nav-bar">
+    <ul>
+    <li><a class="nav-link" href="#features">FEATURES</a></li>
+    <li><a class="nav-link" href="#howitworks">HOW IT WORKS</a></li>
+    <li><a class="nav-link" href="#pricing">PRICING</a></li>
+      <li><a class="nav-link" href="#contactus">CONTACT US</a></li></ul>
+  </nav>
+  </div>
+</div>
+  <main>
+    <section id="features">
+    <div class="grid">
+      <div class="description odd">
+
+        <p><h1> ROASTING & BLENDING</h1>
+At AVACODES , we roast our coffees separately by origin and type. Similar to the approach a fine wine maker uses when blending, we want to make sure each component is contributing distinctive and desirable characteristics to the blend.
+      </div>
+      </div>
+      <div class="grid">
+        <div class="description even">
+          <h1>PACKAGING CAPABILITIES</h1>
+We have packaging capabilities for businesses who are always on the go. We have solid white cups with foil lid Keurig 2.0 compatible packaging, retail size valve bags, retail and vending larger format valve bags, bulk valve bags, mini-brick trial size, fractional pack coffee (also great for retail trial size), urn pack fractional coffee, and espresso pods single and double, regular and decaffeinated coffee in an assortment of sizes.
+        </div>
+      </div>
+      <div class="grid">
+        <div class="description odd">
+          <h1>PRIVATE LABEL</h1>
+AVACODE has extensive experience with developing comprehensive private label coffee programs for both retail and foodservice applications. We are uniquely positioned to offer both large and small volume customers the ability to brand their own coffee. We build these programs around the individual needs of our customers. 
+          
+      </div>
+      </div>
+      <div class="grid">
+        <div class="description even">
+          <h1> EQUIPMENT</h1>
+Our top of the line espresso equipment provides state of the art coffee every single time. We offer traditional equipment, super automatic equipment, and premium espresso grinders.
+      </div>
+      </div>
+      </section>
+        <section id="howitworks">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zLmBrRT9fMs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+        </section>
+    <section id="pricing">
+      <div class="product1 ">
+        <div><h1>PRODUCT 1</h1></div>
+        <div>
+          <p> PRICE: $$$$<br>
+            <span>nutrition benefit 1</span><br>
+            <span>nutrition benefit 2</span><br>
+            <span>nutrition benefit 2</span><br>
+          </p>
+        </div>
+      </div>
+       <div class="product1 ev">
+         <div><h1>PRODUCT 1</h1></div>
+        <div>
+          <p> PRICE: $$$$<br>
+            <span>nutrition benefit 1</span><br>
+            <span>nutrition benefit 2</span><br>
+            <span>nutrition benefit 2</span><br>
+          </p>
+        </div>
+      </div>
+       <div class="product1">
+         <div><h1>PRODUCT 1</h1></div>
+        <div>
+          <p> PRICE: $$$$<br>
+            <span>nutrition benefit 1</span><br>
+            <span>nutrition benefit 2</span><br>
+            <span>nutrition benefit 2</span><br>
+          </p>
+        </div>
+      </div>
+        <div class="product1 ev">
+         <div><h1>PRODUCT 1</h1></div>
+        <div>
+          <p> PRICE: $$$$<br>
+            <span>nutrition benefit 1</span><br>
+            <span>nutrition benefit 2</span><br>
+            <span>nutrition benefit 2</span><br>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contactus">
+      <div class="content">
+      <h1>CONTACT</h1>
+      <p>HOUSE NO<br>
+        STATE
+        PINCODE
+        PHONE
+      </p>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <form class="contact" id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id ="email" type="email" placeholder="enter email id" name="email">
+        <input type="submit" id="submit"></input>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
